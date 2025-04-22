@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de dos columnas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        main {
+            flex: 3;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Layout de dos columnas</h1>
+        </header>
+        <div class="content">
+            <main>
+                <h2>Contenido Principal</h2>
+                <p>Esta es la columna principal más ancha.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore non expedita perspiciatis dignissimos, id praesentium ullam laboriosam sequi tenetur officiis suscipit aperiam culpa quas magni mollitia, animi nemo officia. Itaque!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis fugiat odit laudantium beatae amet, itaque voluptates culpa ad, dolores iure autem quisquam voluptatem. Quasi ullam fuga tempora dolorem dolorum optio?</p>
+            </main>
+            <aside>
+                <h3>Barra lateral</h3>
+                <p>Contenido secundario o menú.</p>
+            </aside>
+        </div>
+        <footer>
+            <p>La Paz - Bolivia</p>
+        </footer>
+    </div>
+</body>
+</html>

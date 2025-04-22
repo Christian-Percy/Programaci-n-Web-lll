@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de tres columnas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            flex: 1;
+        }
+        nav {
+            flex: 1;
+            padding: 20px;
+            background-color: #ec6565;
+            order: -1;
+        }
+        main {
+            flex: 3;
+            padding: 20px;
+            background-color: #8a7979;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            background-color: #e76bdd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Layout de tres columnas</h1>
+        </header>
+        <div class="content">
+            <nav>
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <main>
+                <h2>Contenido Principal</h2>
+                <p>Esta es la columna principal central.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, porro? Porro error deleniti provident, doloribus veniam velit enim ipsa recusandae omnis ex praesentium suscipit quasi doloremque asperiores consequuntur, eos quis!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto iure eos aspernatur sunt fuga sed tenetur assumenda voluptatibus, atque, officia quas quo earum voluptate laborum, harum numquam doloribus ratione expedita.</p>
+
+            </main>
+            <aside>
+                <h3>Barra lateral</h3>
+                <p>Contenido secundario o widgets.</p>
+            </aside>
+        </div>
+        <footer>
+            <p>La Paz - Bolivia</p>
+        </footer>
+    </div>
+</body>
+</html>

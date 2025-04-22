@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsive</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        nav {
+            background-color: #ccc;
+            padding: 20px;
+            width: 100%;
+        }
+        main {
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 100%;
+        }
+        aside {
+            background-color: #ddd;
+            padding: 20px;
+            width: 100%;
+        }
+        
+        
+        @media (min-width: 768px) {
+            nav {
+                width: 25%;
+            }
+            main {
+                width: 50%;
+            }
+            aside {
+                width: 25%;
+            }
+        }
+        
+        
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Responsive</h1>
+        </header>
+        <nav>
+            <h3>Menú</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Contenido Principal</h2>
+            <p>Este layout se adapta a diferentes tamaños de pantalla.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, tempora iure consequuntur ullam ex ratione qui doloribus, voluptatum dignissimos porro non dolores odit sunt expedita impedit facere veniam dolor vel?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi obcaecati assumenda earum, quasi libero labore architecto ipsa illo officiis exercitationem dolore, impedit facilis optio? Aspernatur voluptas similique aperiam? Nesciunt, laborum?</p>
+        </main>
+        <aside>
+            <h3>Barra lateral</h3>
+            <p>Contenido adicional que se reorganiza en móviles.</p>
+        </aside>
+        <footer>
+            <p>La Paz - Bolivia</p>
+        </footer>
+    </div>
+</body>
+</html>
